@@ -183,7 +183,7 @@ ul {
 
 .effec{
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: 50% 50%;
@@ -206,14 +206,19 @@ ul {
 }
 
 .sol{   
-    font-size: 56px;
+    /* font-size: 56px;
+    max-width: 496px;
+    line-height: 1.07; */
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    max-width: 320px;
     font-family: "Roboto", sans-serif;
-    line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--white-color);
-    max-width: 496px;
     text-align: center;
     margin: 0 auto;
+    text-transform: capitalize;
 }
 
 .order{
@@ -233,7 +238,8 @@ ul {
     height: 56px;
     border: none;
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 72px;
+    /* margin-top: 48px; */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
@@ -411,8 +417,8 @@ ul {
 }
 
 .team-list{
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     /*align-self: flex-start;
     gap: 24px;
     padding-left: 0; */
@@ -427,7 +433,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: calc((100% - 72px) / 4); */
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -559,9 +564,6 @@ ul{
 .costumers-punkts {
     width: 190px;
     height: 88px;
-    margin-right: 16px;
-    /* width: 168px;
-    height: 88px; */
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
