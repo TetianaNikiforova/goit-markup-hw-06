@@ -44,6 +44,8 @@ ul {
 .container {
     max-width: 100%;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
 .list{
@@ -125,7 +127,7 @@ ul {
     bottom: -1px;
     background-color: var(--c-ocean);
     position: absolute;
-    transform: translateY(1000%), translateX(1000%);
+    transform: translateY(0), translateX(0);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -202,6 +204,8 @@ ul {
     display: flex;
     flex-direction: column;
     position: fixed;
+    /* justify-content: space-between; */
+    overflow: scroll;
     top: 0;
     left: 0;
     width: 100vw;
@@ -236,8 +240,8 @@ ul {
     fill: var(--white-color);
 }
 
-.mob-menu-list {
-    margin-top: 80px;
+.mob-menu-conteiner {
+    margin-top: 32px;
     /* padding-bottom: 284px; */
 }
 
@@ -261,7 +265,12 @@ ul {
     color: var(--c-ocean);
 }
 
+.link-studio {
+    color: var(--c-ocean);
+}
+
 .address-mob {
+    margin-top: auto;
     padding-bottom: 48px;
 }
 
@@ -293,6 +302,7 @@ ul {
 }
 
 .social-mob {
+    margin-top: auto;
     flex-direction: column;
     padding-top: 284px;
 }
@@ -339,9 +349,7 @@ ul {
     flex-shrink: 0;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 1440px;
+    padding: 112px 54px 240px;
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -350,7 +358,6 @@ ul {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
 }
 
 .sol{   
@@ -438,12 +445,15 @@ ul {
 
 .benefits-conteiner .benefits{
     margin-top: 0;
-    padding: 96px 16px;
 }
 
 .benefits-punkts{
     /* width: calc((100% - 72px) / 3); */
     width: 100%;
+}
+
+.feature {
+    padding: 96px 0;
 }
 
 .benefits{
@@ -482,8 +492,7 @@ ul {
 
 .monitor{
     display: none;
-    /* background: #FFF;
-    padding-bottom: 120px; */
+    /* background: #FFF;*/
 }
 
 .title-monitor{
@@ -518,7 +527,6 @@ ul {
 .conteiner-team{
     display: flex;
     flex-direction: column;
-    padding: 96px 0;
 }
 
 .team-name {
@@ -548,7 +556,7 @@ ul {
 
 .team{
     background-color: #F4F4FD;
-    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .team-title{
@@ -670,12 +678,11 @@ ul{
 
 .costumers {
     background-color: #FFF;
+    padding: 96px 0;
 }
 
 .costumers-conteiner  {
     /*outline: 2px solid red;*/
-        padding-bottom: 96px;
-        padding-top: 96px;
 }
 
 .costumers-title {
@@ -735,6 +742,11 @@ ul{
 
 /**-------Footer---------***/
 
+.footer {
+    padding: 96px;
+    margin: 0;
+}
+
 .conteiner-footer{
     display: flex;
     flex-direction: column;
@@ -745,9 +757,10 @@ ul{
 .footer-all {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    margin: 0;
+    width: 100%;
 }
 
 .logo-footer{
@@ -786,7 +799,8 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud, #F4F4FD);
-    max-width: 264px;
+    max-width: 268px;
+    text-align: left;
 }
 
 .footer-social {
@@ -1071,6 +1085,7 @@ ul{
     height: 100%;
     width: 100%;
     position: fixed;
+    overflow: scroll;
     top: 0;
     left: 0;
     background-color: rgba(46, 47, 66, 0.40);
@@ -1079,13 +1094,13 @@ ul{
 
 .modal {
     padding: 72px 24px 24px 24px;
-    width: 392px;
-    min-height: 584px;
+    max-width: 392px;
+    max-height: 584px;
     border-radius: 4px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 10%;
+    transform: translate(-50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--c-dairy);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -1187,7 +1202,7 @@ ul{
 }
 
 .conteiner-label {
-    width: 360px;
+    width: 100%;
     height: 58px;
     margin-bottom: 8px;
 }
@@ -1201,7 +1216,7 @@ ul{
 }
 
 .comment-conteiner {
-    width: 360px;
+    width: 100%;
     margin-bottom: 16px;
 }
 
